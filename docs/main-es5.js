@@ -28,7 +28,40 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("projecAngulart2\n<ul>\n  <li><a routerLink=\"/Father\">Father</a></li>\n  <li><a routerLink=\"/Son\">Son</a></li>\n  <li><a routerLink=\"/Grandson\">Grandson</a></li>\n</ul>\n <router-outlet></router-outlet> ");
+            /* harmony default export */ __webpack_exports__["default"] = ("projecAngulart2\n<ul>\n  <li><a routerLink=\"/Father\">Father</a></li>\n  <li><a routerLink=\"/Son\">Son</a></li>\n  <li><a routerLink=\"/Grandson\">Grandson</a></li>\n  <li><a routerLink=\"/CanActivat\">CanActivat</a></li>\n  <li><a routerLink=\"/User/5\">User/</a></li>\n  <li><input [(ngModel)]=aaaa></li>\n  <li><a routerLink=\"/Data\">Data</a></li>\n</ul>\n <router-outlet></router-outlet> ");
+            /***/ 
+        }),
+        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/componats/activPages/can-activat-page/can-activat-page.component.html": 
+        /*!*****************************************************************************************************************************!*\
+          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/componats/activPages/can-activat-page/can-activat-page.component.html ***!
+          \*****************************************************************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("<p>can-activat-page works!</p>\n");
+            /***/ 
+        }),
+        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/componats/activPages/data-activ/data-activ.component.html": 
+        /*!*****************************************************************************************************************!*\
+          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/componats/activPages/data-activ/data-activ.component.html ***!
+          \*****************************************************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("<p>data-activ works!</p>\n");
+            /***/ 
+        }),
+        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/componats/activPages/dynamic-page/dynamic-page.component.html": 
+        /*!*********************************************************************************************************************!*\
+          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/componats/activPages/dynamic-page/dynamic-page.component.html ***!
+          \*********************************************************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("<p>dynamic-page works!</p>\n<div *ngIf = \"this.myUser\">\n    \"id  :  \"{{this.myUser.id}}<br>\n    \"name  :  \"{{this.myUser.name}}<br>\n    \"username  :  \"{{this.myUser.username}}<br>\n    \"email  :  \"{{this.myUser.email}}<br>\n</div>");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/componats/familyPages/family-page-father/family-page-father.component.html": 
@@ -379,10 +412,25 @@
             /* harmony import */ var _componats_familyPages_family_page_grandson_family_page_grandson_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./componats/familyPages/family-page-grandson/family-page-grandson.component */ "./src/app/componats/familyPages/family-page-grandson/family-page-grandson.component.ts");
             /* harmony import */ var _componats_familyPages_family_page_father_family_page_father_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./componats/familyPages/family-page-father/family-page-father.component */ "./src/app/componats/familyPages/family-page-father/family-page-father.component.ts");
             /* harmony import */ var _componats_familyPages_family_page_son_family_page_son_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./componats/familyPages/family-page-son/family-page-son.component */ "./src/app/componats/familyPages/family-page-son/family-page-son.component.ts");
+            /* harmony import */ var _componats_activPages_data_activ_data_activ_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./componats/activPages/data-activ/data-activ.component */ "./src/app/componats/activPages/data-activ/data-activ.component.ts");
+            /* harmony import */ var _componats_activPages_can_activat_page_can_activat_page_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./componats/activPages/can-activat-page/can-activat-page.component */ "./src/app/componats/activPages/can-activat-page/can-activat-page.component.ts");
+            /* harmony import */ var _services_activServics_can_activ_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./services/activServics/can-activ.service */ "./src/app/services/activServics/can-activ.service.ts");
+            /* harmony import */ var _componats_activPages_dynamic_page_dynamic_page_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./componats/activPages/dynamic-page/dynamic-page.component */ "./src/app/componats/activPages/dynamic-page/dynamic-page.component.ts");
             var routes = [
                 { path: 'Father', component: _componats_familyPages_family_page_father_family_page_father_component__WEBPACK_IMPORTED_MODULE_4__["FamilyPageFatherComponent"] },
                 { path: 'Grandson', component: _componats_familyPages_family_page_grandson_family_page_grandson_component__WEBPACK_IMPORTED_MODULE_3__["FamilyPageGrandsonComponent"] },
-                { path: 'Son', component: _componats_familyPages_family_page_son_family_page_son_component__WEBPACK_IMPORTED_MODULE_5__["FamilyPageSonComponent"] }
+                { path: 'Son', component: _componats_familyPages_family_page_son_family_page_son_component__WEBPACK_IMPORTED_MODULE_5__["FamilyPageSonComponent"] },
+                { path: 'Data',
+                    component: _componats_activPages_data_activ_data_activ_component__WEBPACK_IMPORTED_MODULE_6__["DataActivComponent"],
+                    data: { text: "hj", num: '6' }
+                },
+                { path: 'CanActivat',
+                    component: _componats_activPages_can_activat_page_can_activat_page_component__WEBPACK_IMPORTED_MODULE_7__["CanActivatPageComponent"],
+                    canActivate: [_services_activServics_can_activ_service__WEBPACK_IMPORTED_MODULE_8__["CanActivService"]]
+                },
+                { path: 'User/:id', component: _componats_activPages_dynamic_page_dynamic_page_component__WEBPACK_IMPORTED_MODULE_9__["DynamicPageComponent"] },
+                { path: '', redirectTo: 'Father', pathMatch: 'full' },
+                { path: '**', redirectTo: 'Son', pathMatch: 'full' }
             ];
             var AppRoutingModule = /** @class */ (function () {
                 function AppRoutingModule() {
@@ -446,11 +494,16 @@
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-            /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-            /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-            /* harmony import */ var _componats_familyPages_family_page_grandson_family_page_grandson_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./componats/familyPages/family-page-grandson/family-page-grandson.component */ "./src/app/componats/familyPages/family-page-grandson/family-page-grandson.component.ts");
-            /* harmony import */ var _componats_familyPages_family_page_father_family_page_father_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./componats/familyPages/family-page-father/family-page-father.component */ "./src/app/componats/familyPages/family-page-father/family-page-father.component.ts");
-            /* harmony import */ var _componats_familyPages_family_page_son_family_page_son_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./componats/familyPages/family-page-son/family-page-son.component */ "./src/app/componats/familyPages/family-page-son/family-page-son.component.ts");
+            /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+            /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+            /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+            /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+            /* harmony import */ var _componats_familyPages_family_page_grandson_family_page_grandson_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./componats/familyPages/family-page-grandson/family-page-grandson.component */ "./src/app/componats/familyPages/family-page-grandson/family-page-grandson.component.ts");
+            /* harmony import */ var _componats_familyPages_family_page_father_family_page_father_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./componats/familyPages/family-page-father/family-page-father.component */ "./src/app/componats/familyPages/family-page-father/family-page-father.component.ts");
+            /* harmony import */ var _componats_familyPages_family_page_son_family_page_son_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./componats/familyPages/family-page-son/family-page-son.component */ "./src/app/componats/familyPages/family-page-son/family-page-son.component.ts");
+            /* harmony import */ var _componats_activPages_data_activ_data_activ_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./componats/activPages/data-activ/data-activ.component */ "./src/app/componats/activPages/data-activ/data-activ.component.ts");
+            /* harmony import */ var _componats_activPages_can_activat_page_can_activat_page_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./componats/activPages/can-activat-page/can-activat-page.component */ "./src/app/componats/activPages/can-activat-page/can-activat-page.component.ts");
+            /* harmony import */ var _componats_activPages_dynamic_page_dynamic_page_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./componats/activPages/dynamic-page/dynamic-page.component */ "./src/app/componats/activPages/dynamic-page/dynamic-page.component.ts");
             var AppModule = /** @class */ (function () {
                 function AppModule() {
                 }
@@ -459,19 +512,168 @@
             AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
                     declarations: [
-                        _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-                        _componats_familyPages_family_page_grandson_family_page_grandson_component__WEBPACK_IMPORTED_MODULE_5__["FamilyPageGrandsonComponent"],
-                        _componats_familyPages_family_page_father_family_page_father_component__WEBPACK_IMPORTED_MODULE_6__["FamilyPageFatherComponent"],
-                        _componats_familyPages_family_page_son_family_page_son_component__WEBPACK_IMPORTED_MODULE_7__["FamilyPageSonComponent"]
+                        _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
+                        _componats_familyPages_family_page_grandson_family_page_grandson_component__WEBPACK_IMPORTED_MODULE_7__["FamilyPageGrandsonComponent"],
+                        _componats_familyPages_family_page_father_family_page_father_component__WEBPACK_IMPORTED_MODULE_8__["FamilyPageFatherComponent"],
+                        _componats_familyPages_family_page_son_family_page_son_component__WEBPACK_IMPORTED_MODULE_9__["FamilyPageSonComponent"],
+                        _componats_activPages_data_activ_data_activ_component__WEBPACK_IMPORTED_MODULE_10__["DataActivComponent"],
+                        _componats_activPages_can_activat_page_can_activat_page_component__WEBPACK_IMPORTED_MODULE_11__["CanActivatPageComponent"],
+                        _componats_activPages_dynamic_page_dynamic_page_component__WEBPACK_IMPORTED_MODULE_12__["DynamicPageComponent"]
                     ],
                     imports: [
                         _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-                        _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]
+                        _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"],
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
+                        _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"]
                     ],
                     providers: [],
-                    bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+                    bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
                 })
             ], AppModule);
+            /***/ 
+        }),
+        /***/ "./src/app/componats/activPages/can-activat-page/can-activat-page.component.css": 
+        /*!**************************************************************************************!*\
+          !*** ./src/app/componats/activPages/can-activat-page/can-activat-page.component.css ***!
+          \**************************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmF0cy9hY3RpdlBhZ2VzL2Nhbi1hY3RpdmF0LXBhZ2UvY2FuLWFjdGl2YXQtcGFnZS5jb21wb25lbnQuY3NzIn0= */");
+            /***/ 
+        }),
+        /***/ "./src/app/componats/activPages/can-activat-page/can-activat-page.component.ts": 
+        /*!*************************************************************************************!*\
+          !*** ./src/app/componats/activPages/can-activat-page/can-activat-page.component.ts ***!
+          \*************************************************************************************/
+        /*! exports provided: CanActivatPageComponent */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CanActivatPageComponent", function () { return CanActivatPageComponent; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            var CanActivatPageComponent = /** @class */ (function () {
+                function CanActivatPageComponent() {
+                }
+                CanActivatPageComponent.prototype.ngOnInit = function () {
+                };
+                return CanActivatPageComponent;
+            }());
+            CanActivatPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+                    selector: 'app-can-activat-page',
+                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./can-activat-page.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/componats/activPages/can-activat-page/can-activat-page.component.html")).default,
+                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./can-activat-page.component.css */ "./src/app/componats/activPages/can-activat-page/can-activat-page.component.css")).default]
+                })
+            ], CanActivatPageComponent);
+            /***/ 
+        }),
+        /***/ "./src/app/componats/activPages/data-activ/data-activ.component.css": 
+        /*!**************************************************************************!*\
+          !*** ./src/app/componats/activPages/data-activ/data-activ.component.css ***!
+          \**************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmF0cy9hY3RpdlBhZ2VzL2RhdGEtYWN0aXYvZGF0YS1hY3Rpdi5jb21wb25lbnQuY3NzIn0= */");
+            /***/ 
+        }),
+        /***/ "./src/app/componats/activPages/data-activ/data-activ.component.ts": 
+        /*!*************************************************************************!*\
+          !*** ./src/app/componats/activPages/data-activ/data-activ.component.ts ***!
+          \*************************************************************************/
+        /*! exports provided: DataActivComponent */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataActivComponent", function () { return DataActivComponent; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+            var DataActivComponent = /** @class */ (function () {
+                function DataActivComponent(ActivatedRoute) {
+                    this.ActivatedRoute = ActivatedRoute;
+                }
+                DataActivComponent.prototype.ngOnInit = function () {
+                    var _this = this;
+                    this.ActivatedRoute.data.subscribe(function (data) {
+                        _this.myData = data;
+                        console.log(_this.myData);
+                    });
+                };
+                return DataActivComponent;
+            }());
+            DataActivComponent.ctorParameters = function () { return [
+                { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] }
+            ]; };
+            DataActivComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+                    selector: 'app-data-activ',
+                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./data-activ.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/componats/activPages/data-activ/data-activ.component.html")).default,
+                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./data-activ.component.css */ "./src/app/componats/activPages/data-activ/data-activ.component.css")).default]
+                })
+            ], DataActivComponent);
+            /***/ 
+        }),
+        /***/ "./src/app/componats/activPages/dynamic-page/dynamic-page.component.css": 
+        /*!******************************************************************************!*\
+          !*** ./src/app/componats/activPages/dynamic-page/dynamic-page.component.css ***!
+          \******************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmF0cy9hY3RpdlBhZ2VzL2R5bmFtaWMtcGFnZS9keW5hbWljLXBhZ2UuY29tcG9uZW50LmNzcyJ9 */");
+            /***/ 
+        }),
+        /***/ "./src/app/componats/activPages/dynamic-page/dynamic-page.component.ts": 
+        /*!*****************************************************************************!*\
+          !*** ./src/app/componats/activPages/dynamic-page/dynamic-page.component.ts ***!
+          \*****************************************************************************/
+        /*! exports provided: DynamicPageComponent */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DynamicPageComponent", function () { return DynamicPageComponent; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+            /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+            var DynamicPageComponent = /** @class */ (function () {
+                function DynamicPageComponent(activatedRoute, http) {
+                    this.activatedRoute = activatedRoute;
+                    this.http = http;
+                    this.userPeth = 'https://jsonplaceholder.typicode.com/users/';
+                }
+                DynamicPageComponent.prototype.ngOnInit = function () {
+                    var _this = this;
+                    this.activatedRoute.params.subscribe(function (prmz) {
+                        console.log(prmz);
+                        _this.currentUser = prmz.id;
+                        console.log("prmz.id = " + prmz.id + "  this.currentUser = " + _this.currentUser + "  this.userPeth + this.currentUser = " + _this.userPeth + _this.currentUser);
+                        _this.http.get(_this.userPeth + _this.currentUser)
+                            .subscribe(function (myDaya) {
+                            _this.myUser = myDaya;
+                            console.log('this.myUser' + _this.myUser);
+                        });
+                    });
+                };
+                return DynamicPageComponent;
+            }());
+            DynamicPageComponent.ctorParameters = function () { return [
+                { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
+                { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] }
+            ]; };
+            DynamicPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+                    selector: 'app-dynamic-page',
+                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./dynamic-page.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/componats/activPages/dynamic-page/dynamic-page.component.html")).default,
+                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./dynamic-page.component.css */ "./src/app/componats/activPages/dynamic-page/dynamic-page.component.css")).default]
+                })
+            ], DynamicPageComponent);
             /***/ 
         }),
         /***/ "./src/app/componats/familyPages/family-page-father/family-page-father.component.css": 
@@ -586,6 +788,32 @@
                     styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./family-page-son.component.css */ "./src/app/componats/familyPages/family-page-son/family-page-son.component.css")).default]
                 })
             ], FamilyPageSonComponent);
+            /***/ 
+        }),
+        /***/ "./src/app/services/activServics/can-activ.service.ts": 
+        /*!************************************************************!*\
+          !*** ./src/app/services/activServics/can-activ.service.ts ***!
+          \************************************************************/
+        /*! exports provided: CanActivService */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CanActivService", function () { return CanActivService; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            var CanActivService = /** @class */ (function () {
+                function CanActivService() {
+                }
+                CanActivService.prototype.canActivate = function () {
+                    return false;
+                };
+                return CanActivService;
+            }());
+            CanActivService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+                    providedIn: 'root'
+                })
+            ], CanActivService);
             /***/ 
         }),
         /***/ "./src/environments/environment.ts": 
