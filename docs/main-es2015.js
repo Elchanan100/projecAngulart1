@@ -32,7 +32,46 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("projecAngulart1");
+/* harmony default export */ __webpack_exports__["default"] = ("projecAngulart2\n<ul>\n  <li><a routerLink=\"/Father\">Father</a></li>\n  <li><a routerLink=\"/Son\">Son</a></li>\n  <li><a routerLink=\"/Grandson\">Grandson</a></li>\n</ul>\n <router-outlet></router-outlet> ");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/componats/familyPages/family-page-father/family-page-father.component.html":
+/*!**********************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/componats/familyPages/family-page-father/family-page-father.component.html ***!
+  \**********************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<p>family-page-father works!</p>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/componats/familyPages/family-page-grandson/family-page-grandson.component.html":
+/*!**************************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/componats/familyPages/family-page-grandson/family-page-grandson.component.html ***!
+  \**************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<p>family-page-grandson works!</p>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/componats/familyPages/family-page-son/family-page-son.component.html":
+/*!****************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/componats/familyPages/family-page-son/family-page-son.component.html ***!
+  \****************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<p>family-page-son works!</p>\n");
 
 /***/ }),
 
@@ -278,10 +317,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _componats_familyPages_family_page_grandson_family_page_grandson_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./componats/familyPages/family-page-grandson/family-page-grandson.component */ "./src/app/componats/familyPages/family-page-grandson/family-page-grandson.component.ts");
+/* harmony import */ var _componats_familyPages_family_page_father_family_page_father_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./componats/familyPages/family-page-father/family-page-father.component */ "./src/app/componats/familyPages/family-page-father/family-page-father.component.ts");
+/* harmony import */ var _componats_familyPages_family_page_son_family_page_son_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./componats/familyPages/family-page-son/family-page-son.component */ "./src/app/componats/familyPages/family-page-son/family-page-son.component.ts");
 
 
 
-const routes = [];
+
+
+
+const routes = [
+    { path: 'Father', component: _componats_familyPages_family_page_father_family_page_father_component__WEBPACK_IMPORTED_MODULE_4__["FamilyPageFatherComponent"] },
+    { path: 'Grandson', component: _componats_familyPages_family_page_grandson_family_page_grandson_component__WEBPACK_IMPORTED_MODULE_3__["FamilyPageGrandsonComponent"] },
+    { path: 'Son', component: _componats_familyPages_family_page_son_family_page_son_component__WEBPACK_IMPORTED_MODULE_5__["FamilyPageSonComponent"] }
+];
 let AppRoutingModule = class AppRoutingModule {
 };
 AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -354,6 +403,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _componats_familyPages_family_page_grandson_family_page_grandson_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./componats/familyPages/family-page-grandson/family-page-grandson.component */ "./src/app/componats/familyPages/family-page-grandson/family-page-grandson.component.ts");
+/* harmony import */ var _componats_familyPages_family_page_father_family_page_father_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./componats/familyPages/family-page-father/family-page-father.component */ "./src/app/componats/familyPages/family-page-father/family-page-father.component.ts");
+/* harmony import */ var _componats_familyPages_family_page_son_family_page_son_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./componats/familyPages/family-page-son/family-page-son.component */ "./src/app/componats/familyPages/family-page-son/family-page-son.component.ts");
+
+
+
 
 
 
@@ -364,7 +419,10 @@ let AppModule = class AppModule {
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
-            _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]
+            _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
+            _componats_familyPages_family_page_grandson_family_page_grandson_component__WEBPACK_IMPORTED_MODULE_5__["FamilyPageGrandsonComponent"],
+            _componats_familyPages_family_page_father_family_page_father_component__WEBPACK_IMPORTED_MODULE_6__["FamilyPageFatherComponent"],
+            _componats_familyPages_family_page_son_family_page_son_component__WEBPACK_IMPORTED_MODULE_7__["FamilyPageSonComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -374,6 +432,138 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })
 ], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/componats/familyPages/family-page-father/family-page-father.component.css":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/componats/familyPages/family-page-father/family-page-father.component.css ***!
+  \*******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmF0cy9mYW1pbHlQYWdlcy9mYW1pbHktcGFnZS1mYXRoZXIvZmFtaWx5LXBhZ2UtZmF0aGVyLmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/componats/familyPages/family-page-father/family-page-father.component.ts":
+/*!******************************************************************************************!*\
+  !*** ./src/app/componats/familyPages/family-page-father/family-page-father.component.ts ***!
+  \******************************************************************************************/
+/*! exports provided: FamilyPageFatherComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FamilyPageFatherComponent", function() { return FamilyPageFatherComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let FamilyPageFatherComponent = class FamilyPageFatherComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+FamilyPageFatherComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-family-page-father',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./family-page-father.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/componats/familyPages/family-page-father/family-page-father.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./family-page-father.component.css */ "./src/app/componats/familyPages/family-page-father/family-page-father.component.css")).default]
+    })
+], FamilyPageFatherComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/componats/familyPages/family-page-grandson/family-page-grandson.component.css":
+/*!***********************************************************************************************!*\
+  !*** ./src/app/componats/familyPages/family-page-grandson/family-page-grandson.component.css ***!
+  \***********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmF0cy9mYW1pbHlQYWdlcy9mYW1pbHktcGFnZS1ncmFuZHNvbi9mYW1pbHktcGFnZS1ncmFuZHNvbi5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/componats/familyPages/family-page-grandson/family-page-grandson.component.ts":
+/*!**********************************************************************************************!*\
+  !*** ./src/app/componats/familyPages/family-page-grandson/family-page-grandson.component.ts ***!
+  \**********************************************************************************************/
+/*! exports provided: FamilyPageGrandsonComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FamilyPageGrandsonComponent", function() { return FamilyPageGrandsonComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let FamilyPageGrandsonComponent = class FamilyPageGrandsonComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+FamilyPageGrandsonComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-family-page-grandson',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./family-page-grandson.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/componats/familyPages/family-page-grandson/family-page-grandson.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./family-page-grandson.component.css */ "./src/app/componats/familyPages/family-page-grandson/family-page-grandson.component.css")).default]
+    })
+], FamilyPageGrandsonComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/componats/familyPages/family-page-son/family-page-son.component.css":
+/*!*************************************************************************************!*\
+  !*** ./src/app/componats/familyPages/family-page-son/family-page-son.component.css ***!
+  \*************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmF0cy9mYW1pbHlQYWdlcy9mYW1pbHktcGFnZS1zb24vZmFtaWx5LXBhZ2Utc29uLmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/componats/familyPages/family-page-son/family-page-son.component.ts":
+/*!************************************************************************************!*\
+  !*** ./src/app/componats/familyPages/family-page-son/family-page-son.component.ts ***!
+  \************************************************************************************/
+/*! exports provided: FamilyPageSonComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FamilyPageSonComponent", function() { return FamilyPageSonComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let FamilyPageSonComponent = class FamilyPageSonComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+FamilyPageSonComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-family-page-son',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./family-page-son.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/componats/familyPages/family-page-son/family-page-son.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./family-page-son.component.css */ "./src/app/componats/familyPages/family-page-son/family-page-son.component.css")).default]
+    })
+], FamilyPageSonComponent);
 
 
 
