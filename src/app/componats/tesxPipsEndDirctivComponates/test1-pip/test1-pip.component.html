@@ -1,0 +1,29 @@
+<hr>
+<p>test1-pip works!</p>
+<table border="1">
+    <tr>
+        <th>name</th>
+        <th>age</th>
+    </tr>
+    <tr *ngFor='let a of array '>
+        <td>{{a.name}}</td>
+        <td appText1directiv >{{a.yearOfBirth}}</td> 
+        <td>{{a.yearOfBirth | text1pip}}</td> 
+        <td>{{a.yearOfBirth}}</td> 
+    </tr>
+</table>
+
+    <hr>
+    <form >
+        name: <input [formControl]='name'><br><br>
+        phone: <input [formControl]='phone'><br><br>
+        <button type="button" (click)='enteFormrInTable()'>submite</button>
+    </form> <br><br>
+    <div> name:{{name.value}}</div> <br>
+    <div>phone:{{phone.value}}</div> <br>
+    <table class="myTrOfTableOfNameAndPoane" border="1">
+        <tr>
+            <th>name</th>
+            <th>phone</th>
+        </tr>
+    </table>

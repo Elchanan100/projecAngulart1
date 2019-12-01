@@ -3,9 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class CanActivService   {
+export class Test2PipService {
+
   constructor() { }
-  canActivate(): boolean {
-    return true
-  }
 }
